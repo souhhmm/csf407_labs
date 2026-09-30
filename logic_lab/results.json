@@ -1,0 +1,124 @@
+{
+  "original": {
+    "initial": [
+      "At(Package,A)",
+      "At(Robot,A)"
+    ],
+    "goal": [
+      "At(Package,C)"
+    ],
+    "found": true,
+    "plan": [
+      "PickUp(Package,A)",
+      "Move(A,B)",
+      "Move(B,C)",
+      "Drop(Package,C)"
+    ],
+    "states": [
+      [
+        "At(Package,A)",
+        "At(Robot,A)"
+      ],
+      [
+        "At(Robot,A)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Robot,B)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Robot,C)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Package,C)",
+        "At(Robot,C)"
+      ]
+    ]
+  },
+  "no_pickup": {
+    "initial": [
+      "At(Package,A)",
+      "At(Robot,A)"
+    ],
+    "goal": [
+      "At(Package,C)"
+    ],
+    "found": false,
+    "plan": [],
+    "states": []
+  },
+  "irrelevant_action": {
+    "initial": [
+      "At(Package,A)",
+      "At(Robot,A)"
+    ],
+    "goal": [
+      "At(Package,C)"
+    ],
+    "found": true,
+    "plan": [
+      "PickUp(Package,A)",
+      "Move(A,B)",
+      "Move(B,C)",
+      "Drop(Package,C)"
+    ],
+    "states": [
+      [
+        "At(Package,A)",
+        "At(Robot,A)"
+      ],
+      [
+        "At(Robot,A)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Robot,B)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Robot,C)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Package,C)",
+        "At(Robot,C)"
+      ]
+    ]
+  },
+  "manual_plan": {
+    "plan": [
+      "PickUp(Package,A)",
+      "Move(A,B)",
+      "Move(B,C)",
+      "Drop(Package,C)"
+    ],
+    "states": [
+      [
+        "At(Package,A)",
+        "At(Robot,A)"
+      ],
+      [
+        "At(Robot,A)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Robot,B)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Robot,C)",
+        "Holding(Package)"
+      ],
+      [
+        "At(Package,C)",
+        "At(Robot,C)"
+      ]
+    ]
+  },
+  "initially_applicable": [
+    "Move(A,B)",
+    "PickUp(Package,A)"
+  ]
+}

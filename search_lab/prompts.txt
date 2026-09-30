@@ -1,0 +1,14 @@
+Actual user request (verbatim):
+Alright, do the parts that you think can be done locally directly. Make sure to make it submission ready, no em-dashes, ai slop etc. Make appropriate .venv. Make a single one for all. For reports, use latex. Keep the reports minimal as well.
+
+Implementation specification used while preparing this lab.
+This is a design record, not an additional user message or a separate
+conversation with another model:
+Implement A* with Manhattan distance on the exact grid. Track best g values,
+skip stale heap entries, reconstruct paths, and report length and expansions.
+Compare BFS, zero, Euclidean, and twice Manhattan heuristics. Test adjacent,
+unreachable, and alternative routes.
+
+Execution and corrections:
+No repair after the first executed version. Count reopened expansions, exclude
+the goal, and use an explicit tie order.

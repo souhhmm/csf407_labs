@@ -1,0 +1,14 @@
+Actual user request (verbatim):
+Alright, do the parts that you think can be done locally directly. Make sure to make it submission ready, no em-dashes, ai slop etc. Make appropriate .venv. Make a single one for all. For reports, use latex. Keep the reports minimal as well.
+
+Implementation specification used while preparing this lab.
+This is a design record, not an additional user message or a separate
+conversation with another model:
+Use ordinary Python counts and sampling for first- and second-order models on
+the six provided sentences. Report CPTs, predictions, 20 samples per model, five
+greedy outputs, normalisation tests, and size comparisons. Handle unseen
+contexts and report a length cap for cyclic generation.
+
+Execution and corrections:
+No repair after the first executed version. Alphabetical tie order and a length
+cap were specified; greedy loops are reported.

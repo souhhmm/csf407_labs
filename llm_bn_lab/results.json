@@ -1,0 +1,366 @@
+{
+  "todo": [
+    "Qwen code generation and comparison with the reference implementation"
+  ],
+  "cpds": {
+    "Cloudy": {
+      "parents": [],
+      "values": [
+        [
+          0.5
+        ],
+        [
+          0.5
+        ]
+      ]
+    },
+    "Rain": {
+      "parents": [
+        "Cloudy"
+      ],
+      "values": [
+        [
+          0.8,
+          0.2
+        ],
+        [
+          0.2,
+          0.8
+        ]
+      ]
+    },
+    "Sprinkler": {
+      "parents": [
+        "Cloudy"
+      ],
+      "values": [
+        [
+          0.5,
+          0.9
+        ],
+        [
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    "WetGrass": {
+      "parents": [
+        "Rain",
+        "Sprinkler"
+      ],
+      "values": [
+        [
+          0.99,
+          0.1,
+          0.1,
+          0.01
+        ],
+        [
+          0.01,
+          0.9,
+          0.9,
+          0.99
+        ]
+      ]
+    }
+  },
+  "queries": [
+    {
+      "variable": "Rain",
+      "evidence": {
+        "WetGrass": 1
+      },
+      "pgmpy": 0.7047692307692307,
+      "enumeration": 0.7047692307692309,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "variable": "Sprinkler",
+      "evidence": {
+        "WetGrass": 1
+      },
+      "pgmpy": 0.4278461538461539,
+      "enumeration": 0.42784615384615393,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "variable": "Cloudy",
+      "evidence": {
+        "WetGrass": 1
+      },
+      "pgmpy": 0.5746153846153845,
+      "enumeration": 0.5746153846153847,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "variable": "Rain",
+      "evidence": {
+        "WetGrass": 1,
+        "Sprinkler": 0
+      },
+      "pgmpy": 0.9922022048937886,
+      "enumeration": 0.9922022048937886,
+      "absolute_error": 0.0
+    }
+  ],
+  "mle_1000": {
+    "cpds": {
+      "Cloudy": {
+        "parents": [],
+        "values": [
+          [
+            0.512
+          ],
+          [
+            0.488
+          ]
+        ]
+      },
+      "Rain": {
+        "parents": [
+          "Cloudy"
+        ],
+        "values": [
+          [
+            0.810546875,
+            0.22745901639344263
+          ],
+          [
+            0.189453125,
+            0.7725409836065574
+          ]
+        ]
+      },
+      "Sprinkler": {
+        "parents": [
+          "Cloudy"
+        ],
+        "values": [
+          [
+            0.5390625,
+            0.9057377049180327
+          ],
+          [
+            0.4609375,
+            0.0942622950819672
+          ]
+        ]
+      },
+      "WetGrass": {
+        "parents": [
+          "Rain",
+          "Sprinkler"
+        ],
+        "values": [
+          [
+            0.9879154078549849,
+            0.07179487179487179,
+            0.08527131782945736,
+            0.0
+          ],
+          [
+            0.012084592145015106,
+            0.9282051282051282,
+            0.9147286821705426,
+            1.0
+          ]
+        ]
+      }
+    },
+    "rain_given_cloudy": 0.7725409836065574,
+    "count_max_error": 0.0
+  },
+  "sample_sizes": [
+    {
+      "n": 20,
+      "estimate": 0.8888888888888888,
+      "absolute_error": 0.0888888888888888
+    },
+    {
+      "n": 50,
+      "estimate": 0.8260869565217391,
+      "absolute_error": 0.02608695652173909
+    },
+    {
+      "n": 100,
+      "estimate": 0.7083333333333334,
+      "absolute_error": 0.09166666666666667
+    },
+    {
+      "n": 500,
+      "estimate": 0.7804878048780488,
+      "absolute_error": 0.019512195121951237
+    },
+    {
+      "n": 1000,
+      "estimate": 0.7725409836065574,
+      "absolute_error": 0.027459016393442615
+    },
+    {
+      "n": 5000,
+      "estimate": 0.8039611964430072,
+      "absolute_error": 0.003961196443007187
+    }
+  ],
+  "sparse_data": {
+    "mle": 0.9090909090909091,
+    "bdeu": 0.78125,
+    "cpds_mle": {
+      "Cloudy": {
+        "parents": [],
+        "values": [
+          [
+            0.6333333333333333
+          ],
+          [
+            0.36666666666666664
+          ]
+        ]
+      },
+      "Rain": {
+        "parents": [
+          "Cloudy"
+        ],
+        "values": [
+          [
+            0.9473684210526315,
+            0.09090909090909091
+          ],
+          [
+            0.05263157894736842,
+            0.9090909090909091
+          ]
+        ]
+      },
+      "Sprinkler": {
+        "parents": [
+          "Cloudy"
+        ],
+        "values": [
+          [
+            0.42105263157894735,
+            1.0
+          ],
+          [
+            0.5789473684210527,
+            0.0
+          ]
+        ]
+      },
+      "WetGrass": {
+        "parents": [
+          "Rain",
+          "Sprinkler"
+        ],
+        "values": [
+          [
+            1.0,
+            0.1,
+            0.1,
+            0.0
+          ],
+          [
+            0.0,
+            0.9,
+            0.9,
+            1.0
+          ]
+        ]
+      }
+    },
+    "cpds_bdeu": {
+      "Cloudy": {
+        "parents": [],
+        "values": [
+          [
+            0.6
+          ],
+          [
+            0.4
+          ]
+        ]
+      },
+      "Rain": {
+        "parents": [
+          "Cloudy"
+        ],
+        "values": [
+          [
+            0.8541666666666666,
+            0.21875
+          ],
+          [
+            0.14583333333333334,
+            0.78125
+          ]
+        ]
+      },
+      "Sprinkler": {
+        "parents": [
+          "Cloudy"
+        ],
+        "values": [
+          [
+            0.4375,
+            0.84375
+          ],
+          [
+            0.5625,
+            0.15625
+          ]
+        ]
+      },
+      "WetGrass": {
+        "parents": [
+          "Rain",
+          "Sprinkler"
+        ],
+        "values": [
+          [
+            0.8913043478260869,
+            0.18,
+            0.18,
+            0.35714285714285715
+          ],
+          [
+            0.10869565217391304,
+            0.82,
+            0.82,
+            0.6428571428571429
+          ]
+        ]
+      }
+    },
+    "mle_count_error": 0.0,
+    "bdeu_count_error": 0.0
+  },
+  "seeds": [
+    {
+      "seed": 1,
+      "estimate": 0.6938775510204082
+    },
+    {
+      "seed": 2,
+      "estimate": 0.7954545454545454
+    },
+    {
+      "seed": 3,
+      "estimate": 0.7446808510638298
+    },
+    {
+      "seed": 4,
+      "estimate": 0.7678571428571429
+    },
+    {
+      "seed": 5,
+      "estimate": 0.7959183673469388
+    }
+  ],
+  "invalid_cpd": "Sum or integral of conditional probabilities for node Rain is not equal to 1.",
+  "wrong_parent_order": {
+    "normalised": true,
+    "posterior": 0.7172952268709487,
+    "trusted_posterior": 0.7047692307692307
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "1": {
+    "summary": {
+      "candidate_contexts": 11,
+      "observed_contexts": 11,
+      "unseen_contexts": 0,
+      "nonzero_entries": 17,
+      "free_parameters_on_observed_support": 6,
+      "dense_cpt_entries": 121,
+      "dense_cpt_free_parameters": 110,
+      "zero_entries_on_observed_contexts": 104,
+      "unique_sentences_out_of_20": 13,
+      "terminated_out_of_20": 20
+    },
+    "counts": {
+      "<START>": {
+        "the": 6
+      },
+      "cat": {
+        "ran": 1,
+        "sat": 2
+      },
+      "dog": {
+        "ran": 1,
+        "sat": 2
+      },
+      "mat": {
+        "<END>": 2
+      },
+      "on": {
+        "the": 4
+      },
+      "park": {
+        "<END>": 2
+      },
+      "ran": {
+        "to": 2
+      },
+      "rug": {
+        "<END>": 2
+      },
+      "sat": {
+        "on": 4
+      },
+      "the": {
+        "cat": 3,
+        "dog": 3,
+        "mat": 2,
+        "park": 2,
+        "rug": 2
+      },
+      "to": {
+        "the": 2
+      }
+    },
+    "probabilities": {
+      "<START>": {
+        "the": 1.0
+      },
+      "cat": {
+        "ran": 0.3333333333333333,
+        "sat": 0.6666666666666666
+      },
+      "dog": {
+        "ran": 0.3333333333333333,
+        "sat": 0.6666666666666666
+      },
+      "mat": {
+        "<END>": 1.0
+      },
+      "on": {
+        "the": 1.0
+      },
+      "park": {
+        "<END>": 1.0
+      },
+      "ran": {
+        "to": 1.0
+      },
+      "rug": {
+        "<END>": 1.0
+      },
+      "sat": {
+        "on": 1.0
+      },
+      "the": {
+        "cat": 0.25,
+        "dog": 0.25,
+        "mat": 0.16666666666666666,
+        "park": 0.16666666666666666,
+        "rug": 0.16666666666666666
+      },
+      "to": {
+        "the": 1.0
+      }
+    },
+    "predictions": {
+      "<START>": "the",
+      "cat": "sat",
+      "dog": "sat",
+      "mat": "<END>",
+      "on": "the",
+      "park": "<END>",
+      "ran": "to",
+      "rug": "<END>",
+      "sat": "on",
+      "the": "cat",
+      "to": "the"
+    },
+    "sampled_20": [
+      {
+        "text": "the cat sat on the dog ran to the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat ran to the dog ran to the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the park",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the dog ran to the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the rug",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the cat ran to the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the park",
+        "stop": "end"
+      },
+      {
+        "text": "the park",
+        "stop": "end"
+      },
+      {
+        "text": "the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the cat ran to the dog ran to the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the rug",
+        "stop": "end"
+      },
+      {
+        "text": "the cat ran to the park",
+        "stop": "end"
+      }
+    ],
+    "sampled_5": [
+      {
+        "text": "the cat sat on the dog ran to the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat ran to the dog ran to the dog sat on the mat",
+        "stop": "end"
+      }
+    ],
+    "greedy_5": [
+      {
+        "text": "the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on",
+        "stop": "length_limit"
+      },
+      {
+        "text": "the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on",
+        "stop": "length_limit"
+      },
+      {
+        "text": "the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on",
+        "stop": "length_limit"
+      },
+      {
+        "text": "the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on",
+        "stop": "length_limit"
+      },
+      {
+        "text": "the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on",
+        "stop": "length_limit"
+      }
+    ]
+  },
+  "2": {
+    "summary": {
+      "candidate_contexts": 121,
+      "observed_contexts": 15,
+      "unseen_contexts": 106,
+      "nonzero_entries": 19,
+      "free_parameters_on_observed_support": 4,
+      "dense_cpt_entries": 1331,
+      "dense_cpt_free_parameters": 1210,
+      "zero_entries_on_observed_contexts": 146,
+      "unique_sentences_out_of_20": 6,
+      "terminated_out_of_20": 20
+    },
+    "counts": {
+      "<START> | <START>": {
+        "the": 6
+      },
+      "<START> | the": {
+        "cat": 3,
+        "dog": 3
+      },
+      "cat | ran": {
+        "to": 1
+      },
+      "cat | sat": {
+        "on": 2
+      },
+      "dog | ran": {
+        "to": 1
+      },
+      "dog | sat": {
+        "on": 2
+      },
+      "on | the": {
+        "mat": 2,
+        "rug": 2
+      },
+      "ran | to": {
+        "the": 2
+      },
+      "sat | on": {
+        "the": 4
+      },
+      "the | cat": {
+        "ran": 1,
+        "sat": 2
+      },
+      "the | dog": {
+        "ran": 1,
+        "sat": 2
+      },
+      "the | mat": {
+        "<END>": 2
+      },
+      "the | park": {
+        "<END>": 2
+      },
+      "the | rug": {
+        "<END>": 2
+      },
+      "to | the": {
+        "park": 2
+      }
+    },
+    "probabilities": {
+      "<START> | <START>": {
+        "the": 1.0
+      },
+      "<START> | the": {
+        "cat": 0.5,
+        "dog": 0.5
+      },
+      "cat | ran": {
+        "to": 1.0
+      },
+      "cat | sat": {
+        "on": 1.0
+      },
+      "dog | ran": {
+        "to": 1.0
+      },
+      "dog | sat": {
+        "on": 1.0
+      },
+      "on | the": {
+        "mat": 0.5,
+        "rug": 0.5
+      },
+      "ran | to": {
+        "the": 1.0
+      },
+      "sat | on": {
+        "the": 1.0
+      },
+      "the | cat": {
+        "ran": 0.3333333333333333,
+        "sat": 0.6666666666666666
+      },
+      "the | dog": {
+        "ran": 0.3333333333333333,
+        "sat": 0.6666666666666666
+      },
+      "the | mat": {
+        "<END>": 1.0
+      },
+      "the | park": {
+        "<END>": 1.0
+      },
+      "the | rug": {
+        "<END>": 1.0
+      },
+      "to | the": {
+        "park": 1.0
+      }
+    },
+    "predictions": {
+      "<START> | <START>": "the",
+      "<START> | the": "cat",
+      "cat | ran": "to",
+      "cat | sat": "on",
+      "dog | ran": "to",
+      "dog | sat": "on",
+      "on | the": "mat",
+      "ran | to": "the",
+      "sat | on": "the",
+      "the | cat": "sat",
+      "the | dog": "sat",
+      "the | mat": "<END>",
+      "the | park": "<END>",
+      "the | rug": "<END>",
+      "to | the": "park"
+    },
+    "sampled_20": [
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the rug",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the rug",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      }
+    ],
+    "sampled_5": [
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the dog ran to the park",
+        "stop": "end"
+      },
+      {
+        "text": "the dog sat on the mat",
+        "stop": "end"
+      }
+    ],
+    "greedy_5": [
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      },
+      {
+        "text": "the cat sat on the mat",
+        "stop": "end"
+      }
+    ]
+  }
+}

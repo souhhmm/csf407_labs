@@ -1,0 +1,17 @@
+Actual user request (verbatim):
+Alright, do the parts that you think can be done locally directly. Make sure to make it submission ready, no em-dashes, ai slop etc. Make appropriate .venv. Make a single one for all. For reports, use latex. Keep the reports minimal as well.
+
+Implementation specification used while preparing this lab.
+This is a design record, not an additional user message or a separate
+conversation with another model:
+Use the four XOR examples, a 2-2-1 PyTorch network with tanh, BCEWithLogitsLoss,
+random initialisation, CPU Adam, and measured loss, probabilities, labels, and
+first-layer gradients. Compare sigmoid, tanh, and ReLU with only the activation
+changed. Zero weights with biases retained and also test fully identical
+initialisation. Replace only the output/loss for a 2-2-3 classifier. Check
+softmax and gradients.
+
+Execution and corrections:
+Seed 7 failed the baseline label check. Only the seed changed to 0 for all
+activation runs; tuning.json records both attempts. A fully zero control tests
+the equal-bias assumption. ReLU failure is retained.

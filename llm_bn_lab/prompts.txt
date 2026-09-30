@@ -1,0 +1,15 @@
+Actual user request (verbatim):
+Alright, do the parts that you think can be done locally directly. Make sure to make it submission ready, no em-dashes, ai slop etc. Make appropriate .venv. Make a single one for all. For reports, use latex. Keep the reports minimal as well.
+
+Implementation specification used while preparing this lab.
+This is a design record, not an additional user message or a separate
+conversation with another model:
+Implement Cloudy/Rain/Sprinkler/WetGrass with the exact binary CPTs. Check
+inference by enumeration, estimate fixed-graph MLE and BDeu parameters, vary
+sample sizes and seeds, and test invalid and permuted CPTs.
+
+Execution and corrections:
+Use estimator instances from the installed pgmpy API. No repairs after the first
+executed local version.
+
+TODO: Qwen code generation and comparison with the reference implementation.
